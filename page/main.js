@@ -7,6 +7,14 @@ for (const element of toggle) {
     })
 }
 
+var x = window.screen.availWidth || window.screen.width || window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+document.body.onresize = function () {
+    if ( x >= 1180) {
+       nav.classList.add('show')
+    }
+}
+
 
 
 
