@@ -66,13 +66,13 @@ nav.show .logo {
 
  /* SUBMENU */
 
- nav .submenu {
+ nav .menuBigScreen {
     opacity: 0;
     visibility: hidden;
 }
 
 
- nav.show .submenu {
+ nav.show .menuBigScreen {
     display: grid;
     place-content: center;
 
@@ -81,7 +81,7 @@ nav.show .logo {
 
    background: var(--background);
    height: 100%;
-   width: 100%;
+   width: 100%; 
 
    position: fixed;
    top: 0;
@@ -97,7 +97,7 @@ nav.show ul.grid {
 }
 
 
-nav.show .submenu ul li {
+nav.show .menuBigScreen ul li {
   font-size: 3rem;
   font-weight: 700;
   color: var(--text-color-menu-mobile);
@@ -105,10 +105,10 @@ nav.show .submenu ul li {
 
 /* MENU WIDTH 1080PX */
 
-.menuBigScreen {
+/* .menuBigScreen {
     visibility: hidden;
 
-}
+} */
 
 
 /* TEXT MOBILE */
@@ -189,42 +189,51 @@ a:active {
 }
 
 
-@media screen and (min-width:1080px) {
+@media screen and (min-width:1180px) {
     body {
         width: 100%;
     }
     
-    nav {
+    nav{
         position: relative;
         border-bottom: 0px;
+        width: 100%;
     }
 
-    .menuBigScreen {
-        visibility: visible;
-        width: 50%;
-        position: relative;
-        top: 3rem;
-        left: 20rem;
-    }
 
-    .menuBigScreen ul {
+    nav.show .menuBigScreen {
         display: flex;
-        justify-content: space-between;
+        /* width: 50%; */
+        position: relative;
+        top: 2.5rem;
+        padding: 0 2rem;
     }
 
-    .menuBigScreen ul li a {
+    nav.show ul.grid {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    nav.show .menuBigScreen ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav.show .menuBigScreen ul li {
+        font-size: 1.3rem;
+        border-bottom: 1px solid var(--border-menu-mobile);
+    }
+
+    nav.show .menuBigScreen ul li a {
         color: var(--text-color-menu-mobile);
         font-weight: 700;
     }
 
-    .menuBigScreen ul li a:hover {
+    nav.show .menuBigScreen ul li a:hover {
         color: var(--button);
     }
     
-    .menuBigScreen ul li {
-        border-bottom: 1px solid var(--border-menu-mobile);
-    }
-
     h1 , .toggle {
         display:none;
     }
@@ -248,8 +257,13 @@ a:active {
         color: var(--text-color);
     }
 
+    .header .paragraph {
+        padding-top: 2rem;
+    }
 
-    
+    .header .paragraph .special {
+         padding-bottom: 0;
+    }
 
 }
 
