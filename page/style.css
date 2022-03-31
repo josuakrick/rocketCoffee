@@ -222,7 +222,6 @@ a:active {
 
     nav.show .menuBigScreen ul li {
         font-size: 1.3rem;
-        border-bottom: 1px solid var(--border-menu-mobile);
     }
 
     nav.show .menuBigScreen ul li a {
@@ -232,6 +231,7 @@ a:active {
 
     nav.show .menuBigScreen ul li a:hover {
         color: var(--button);
+        border-bottom: 1px solid var(--border-menu-mobile);
     }
     
     h1 , .toggle {
