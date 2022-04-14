@@ -7,8 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+       :root {
+        --background: #000;
+        --text-color: #FFF;
+        --button: #8257E5;
+        --border: #29292E;
+        --border-menu-mobile: #A8A8B3;
+        --text-color-menu-mobile: #E1E1E6;
+    
+        --font:'Manrope', sans-serif; 
+  }
     
 
     <title>Rocket Coffee</title>
