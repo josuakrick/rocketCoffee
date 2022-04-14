@@ -7,7 +7,7 @@ for (const element of toggle) {
     })
 }
 
-document.body.onresize = function () {
+document.body.onload = function () {
     if ( document.body.clientWidth >= 1180) {
        nav.classList.add('show')
     }
